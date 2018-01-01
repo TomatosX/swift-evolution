@@ -3,7 +3,7 @@
 * Proposal: [SE-0156](0156-subclass-existentials.md)
 * Authors: [David Hart](http://github.com/hartbit), [Austin Zheng](http://github.com/austinzheng)
 * Review Manager: [Doug Gregor](https://github.com/DougGregor)
-* Status: **Accepted**
+* Status: **Implemented (Swift 4)**
 * Decision Notes: [Rationale](https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20170320/034123.html)
 * Bug: [SR-4296](https://bugs.swift.org/browse/SR-4296)
 
@@ -167,7 +167,7 @@ class E : C, CP1 {} // Valid: the inheritance is explicitly declared
 
 ## Source compatibility
 
-This change will not break Swift 3 compability mode because Objective-C types will continue to be imported as before. But in Swift 4 mode, all types bridged from Objective-C which use the equivalent Objective-C existential syntax could break code which does not meet the new protocol requirements. For example, the following Objective-C code:
+This change will not break Swift 3 compatibility mode because Objective-C types will continue to be imported as before. But in Swift 4 mode, all types bridged from Objective-C which use the equivalent Objective-C existential syntax could break code which does not meet the new protocol requirements. For example, the following Objective-C code:
 
 ```objc
 @interface MyViewController

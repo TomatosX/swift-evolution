@@ -5,7 +5,7 @@
 * Review Manager: [Doug Gregor](https://github.com/DougGregor)
 * Status: **Implemented (Swift 3.1)**
 * Decision Notes: [Rationale](https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20170102/029945.html)
-* Pull Request: [apple/swift#6601](https://github.com/apple/swift/pull/6601)
+* Implementation: [apple/swift#6601](https://github.com/apple/swift/pull/6601)
 
 ## Introduction
 
@@ -153,7 +153,7 @@ public func += <
 
 The addition of the new method does not affect source compatibility. The deprecation of the old method does, but since this is a fundamentally unsound operation that cannot be fixed except via a source-breaking change, it should be aggressively deprecated and then removed.
 
-The knock-on ability to remove the version of `Array.append(contentsOf:)` that takes a collection does not affect source compatability since the version for sequences will be called for collections instead.
+The knock-on ability to remove the version of `Array.append(contentsOf:)` that takes a collection does not affect source compatibility since the version for sequences will be called for collections instead.
 
 ## Effect on ABI stability
 

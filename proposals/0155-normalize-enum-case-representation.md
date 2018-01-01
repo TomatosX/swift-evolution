@@ -3,8 +3,10 @@
 * Proposal: [SE-0155][]
 * Authors: [Daniel Duan][], [Joe Groff][]
 * Review Manager: [John McCall][]
-* Status: **Active review (March 31...April 10, 2017)**
+* Status: **Accepted with revisions**
+* Decision Notes: [Rationale](https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20170417/035972.html)
 * Previous Revision: [1][Revision 1]
+* Bug: [SR-4691](https://bugs.swift.org/browse/SR-4691)
 
 ## Introduction
 
@@ -14,7 +16,7 @@ pattern matching in several places.
 
 Enums, therefore, can be made more "regular" when we replace tuple as the
 representation of associated case values. This proposal aims to define the
-effect of doings so on various parts of the language.
+effect of doing so on various parts of the language.
 
 Swift-evolution thread: [Normalize Enum Case Representation (rev. 2)][]
 
